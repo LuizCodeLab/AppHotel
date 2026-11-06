@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Sobre o App"
+               FontFamily="Kalam"
+               FontSize="50"
+               HorizontalTextAlignment="Center"
+               TextColor="{StaticResource Primary}" />
+
+        <Frame Padding="20" Margin="10">
+            <VerticalStackLayout Spacing="15">
+
+                <Label Text="App Hotel"
+                       TextTransform="Uppercase"
+                       FontSize="Subtitle"
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource Primary}"/>
+
+                <Label Text="Aplicativo desenvolvido para simular a contratação de hospedagem em um hotel, calculando o valor da diária com base na quantidade de hóspedes e no período de estadia."
+                       HorizontalTextAlignment="Center" />
+
+                <BoxView HeightRequest="1"
+                         Color="{StaticResource Gray300}"
+                         HorizontalOptions="Fill" />
+
+                <Grid RowDefinitions="Auto, Auto, Auto"
+                      ColumnDefinitions="Auto, *"
+                      RowSpacing="8"
+                      ColumnSpacing="10">
+
+                    <Label Grid.Row="0" Grid.Column="0"
+                           Text="Desenvolvedor:"
+                           FontAttributes="Bold" />
+                    <Label Grid.Row="0" Grid.Column="1"
+                           Text="Luiz"
+                           TextColor="{StaticResource Primary}" />
+
+                    <Label Grid.Row="1" Grid.Column="0"
+                           Text="Curso:"
+                           FontAttributes="Bold" />
+                    <Label Grid.Row="1" Grid.Column="1"
+                           Text="Técnico em Desenvolvimento de Sistemas"
+                           TextColor="{StaticResource Primary}" />
+
+                    <Label Grid.Row="2" Grid.Column="0"
+                           Text="Ano:"
+                           FontAttributes="Bold" />
+                    <Label Grid.Row="2" Grid.Column="1"
+                           Text="2026"
+                           TextColor="{StaticResource Primary}" />
+                </Grid>
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

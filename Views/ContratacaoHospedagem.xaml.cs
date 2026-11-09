@@ -23,6 +23,18 @@ public partial class ContratacaoHospedagem : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
+        if (pck_quarto.SelectedItem == null)
+        {
+            await DisplayAlert("Atenção", "Selecione uma suíte antes de avançar.", "OK");
+            return;
+        }
+
+        if (stp_adultos.Value < 1)
+        {
+            await DisplayAlert("Atenção", "É necessário pelo menos 1 adulto na hospedagem.", "OK");
+            return;
+        }
+
         try
         {
             Hospedagem h = new Hospedagem

@@ -29,6 +29,18 @@ namespace MauiAppHotel
                 Descricao = "Suíte Crise",
                 ValorDiariaAdulto = 25,
                 ValorDiariaCrianca = 12.5
+            },
+            new Quarto()
+            {
+                Descricao = "Suíte Presidencial",
+                ValorDiariaAdulto = 180.0,
+                ValorDiariaCrianca = 90.0
+            },
+            new Quarto()
+            {
+                Descricao = "Suíte Família",
+                ValorDiariaAdulto = 95.0,
+                ValorDiariaCrianca = 30.0
             }
         };
 

@@ -8,12 +8,12 @@
 
     <Color x:Key="Verde">Green</Color>
     
-    <Color x:Key="Primary">#0F6E56</Color>
-    <Color x:Key="PrimaryDark">#5DCAA5</Color>
+    <Color x:Key="Primary">#0B3D91</Color>
+    <Color x:Key="PrimaryDark">#6E9BE0</Color>
     <Color x:Key="PrimaryDarkText">#242424</Color>
-    <Color x:Key="Secondary">#E1F5EE</Color>
-    <Color x:Key="SecondaryDarkText">#0F6E56</Color>
-    <Color x:Key="Tertiary">#04342C</Color>
+    <Color x:Key="Secondary">#FDF3DC</Color>
+    <Color x:Key="SecondaryDarkText">#8A6D1D</Color>
+    <Color x:Key="Tertiary">#06234B</Color>
 
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
